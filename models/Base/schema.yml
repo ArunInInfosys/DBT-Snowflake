@@ -1,0 +1,30 @@
+
+version: 2
+
+sources:
+  - name: snowflake_sample
+    description: snowflake_sample
+    loader: Snowflake Ingestion
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: CUSTOMER
+        description: customer table
+      - name: LINEITEM
+        description: LINEITEM table
+      - name: NATION
+        description: NATION table
+      - name: ORDERS
+        description: ORDERS table
+      - name: PART
+        description: PART table
+      - name: PARTSUPP
+        description: PARTSUPP table
+      - name: REGION
+        description: REGION table
+      - name: SUPPLIER
+        description: SUPPLIER table
+
+models:
+    - name: first
+      description: "A starter dbt model"
